@@ -6,9 +6,9 @@ public class Persona {
 	private String nombre;
 	private String apellido;
 	private ArrayList<NumeroTelefonico> numerosTelefonicos;
-	private ArrayList<Email> emails;
+	private ArrayList<Email> emails;	
 	
-	public Persona(String nombre, String apellido)// esto es composicion porque es obligatorio
+	public Persona(String nombre, String apellido)
 	{
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -26,7 +26,7 @@ public class Persona {
 		emails.add(new Email(correo));		
 	}
 	
-	public void agregarTelefono(int caracteristica, int numeroDeAbonado, int codigoDePais, Linea linea) //esto es agregacion porque no es obligatorio
+	public void agregarTelefono(int caracteristica, int numeroDeAbonado, int codigoDePais, Linea linea) 
 	{		
 		numerosTelefonicos.add(new NumeroTelefonico(caracteristica, numeroDeAbonado, codigoDePais, linea));
 		
