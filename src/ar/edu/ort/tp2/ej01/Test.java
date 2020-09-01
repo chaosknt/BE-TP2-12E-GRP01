@@ -14,7 +14,7 @@ public class Test {
 			
 			System.out.println("----------------------------");
 			
-			Persona ob2 = new Persona("Diego", "Maradona",022, 58774587, 325, Linea.FIJO, "Diego@dios.com");
+			Persona ob2 = new Persona("Diego", "Maradona",22, 58774587, 325, Linea.FIJO, "Diego@dios.com");
 			
 			ob2.mostrarTodo();
 			
