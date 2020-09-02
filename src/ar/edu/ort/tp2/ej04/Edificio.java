@@ -79,19 +79,16 @@ public class Edificio {
 	{
 		boolean retorno = false;
 		Mudanza origen = buscarOrigen(oPiso, oDpto);
-		Vivienda destino = buscarDestino(dPiso, dDpto);
+		Vivienda destino = buscarDestino(dPiso, dDpto);		
 		
-		//System.out.println(origen);
-		//System.out.println(destino);
 		if(origen == null || destino == null) 
 		{
 			System.out.println("No se realizo la mudanza");
 			
 		}else 
-		{
-			System.out.println(origen);
-			//retorno = true;
-			//destino.agregarMudanza(origen.getpersonas(), origen.getMuebles());
+		{			
+			retorno = true;
+			destino.agregarMudanza(origen.getpersonas(), origen.getMuebles());
 			System.out.println("Se realizo la mudanza");
 		}
 		

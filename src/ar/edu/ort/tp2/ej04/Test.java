@@ -17,16 +17,12 @@ public class Test {
 		ob1.agregarMueble("pb", "A", "Mesa", "madera", Color.BLANCO);
 		ob1.agregarMueble("pb", "A", "Cama", "madera", Color.BLANCO);
 		ob1.agregarMueble("pb", "A", "Silla", "madera", Color.BLANCO);
-		ob1.mostrarViviendas();
+		ob1.mostrarViviendas();		
 		
-		System.out.println(ob1.buscarDestino("1asds", "sdsd"));
 		ob1.realizarMudanza("pb", "A", "1", "C");
 		
-		//ya esta chequeado que realizarMudanza entre bien si existe ambos departamentos, falta hacer los metodos de mudanza
-		//para mover muebles y personas de un dpto al otro
+		ob1.mostrarViviendas();
 		
-		//System.out.println(ob1.getDireccion().toString());
-		//ob1.mostrarViviendas();
 
 	}
 

@@ -70,18 +70,30 @@ public class Vivienda {
 	}	
 		
 	public Mudanza mudar() 
-	{
-		Mudanza retorno = new Mudanza(personas, muebles);
+	{		
+		ArrayList<Persona> auxPer = new ArrayList<Persona>();
+		ArrayList<Mueble> auxMue = new ArrayList<Mueble>();		
+		agregarAlista(personas, auxPer);
+		agregarAlista(muebles, auxMue);
+		Mudanza retorno = new Mudanza(auxPer, auxMue);		
 		personas.clear();
 		muebles.clear();
 		return retorno;
 	}
 	
 	public void agregarMudanza(ArrayList<Persona> p, ArrayList<Mueble> m)
+	{				
+		agregarAlista(p, personas);
+		agregarAlista(m,muebles);
+	}
+	
+	private <T> void agregarAlista(ArrayList<T> listOrigin, ArrayList<T> listDestino)
 	{
-		personas = p;
-		muebles = m;
-	}	
+		for(T t: listOrigin)
+		{
+			listDestino.add(t);
+		}
+	}
 		
 	public void mostrarTodo() 
 	{
