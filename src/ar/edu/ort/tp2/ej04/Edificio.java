@@ -60,6 +60,20 @@ public class Edificio {
 		}
 	}
 	
+	public void agregarMueble(String piso, String dpto, String nombre, String material, Color color) 
+	{
+		Vivienda casa = buscarDestino(piso, dpto);
+		
+		if(casa != null)
+		{
+			casa.agregarMueble(nombre, material, color);
+			System.out.println("Se agrego el mueble");
+		}else
+		{
+			System.out.println("No se encontro el dpto");
+		}
+	}
+	
 	public boolean realizarMudanza(String oPiso, String oDpto, String dPiso, String dDpto) 
 	{
 		boolean retorno = false;

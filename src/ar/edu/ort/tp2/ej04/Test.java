@@ -12,6 +12,7 @@ public class Test {
 		ob1.agregarPersona("aasdsad", "a", "aa", "dd", "as");
 		
 		ob1.agregarPersona("pb", "A", "Mariano", "Pagani", "31");
+		ob1.agregarMueble("pb", "A", "Mesa", "madera", Color.BLANCO);
 		ob1.mostrarViviendas();
 		
 		
