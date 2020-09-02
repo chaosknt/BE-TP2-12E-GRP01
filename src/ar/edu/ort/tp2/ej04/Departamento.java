@@ -27,7 +27,7 @@ public class Departamento {
 
 	@Override
 	public String toString() {
-		return "Departamento [altura=" + piso + ", dpto=" + dpto + "]";
+		return "Departamento [piso=" + piso + ", dpto=" + dpto + "]";
 	}
 	
 	

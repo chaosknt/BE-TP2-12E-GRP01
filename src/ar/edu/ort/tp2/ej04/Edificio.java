@@ -39,6 +39,7 @@ public class Edificio {
 			for(Vivienda e: edificio)
 			{
 				e.mostrarTodo();
+				System.out.println("-----------");
 			}
 		}else 
 		{
@@ -80,10 +81,18 @@ public class Edificio {
 		Mudanza origen = buscarOrigen(oPiso, oDpto);
 		Vivienda destino = buscarDestino(dPiso, dDpto);
 		
-		if(origen != null && destino != null) 
+		//System.out.println(origen);
+		//System.out.println(destino);
+		if(origen == null || destino == null) 
 		{
-			retorno = true;
-			destino.agregarMudanza(origen.getpersonas(), origen.getMuebles());
+			System.out.println("No se realizo la mudanza");
+			
+		}else 
+		{
+			System.out.println(origen);
+			//retorno = true;
+			//destino.agregarMudanza(origen.getpersonas(), origen.getMuebles());
+			System.out.println("Se realizo la mudanza");
 		}
 		
 		return retorno;
@@ -106,7 +115,7 @@ public class Edificio {
 		return retorno;
 	}
 	
-	private Vivienda buscarDestino(String piso, String dpto) 
+	public Vivienda buscarDestino(String piso, String dpto) 
 	{
 		Vivienda retorno = null;
 		int indice = 0;

@@ -8,19 +8,22 @@ public class Test {
 		
 		ob1.agregarVivienda("pb", "A");
 		ob1.agregarVivienda("pb", "A");
+		ob1.agregarVivienda("1", "C");		
 		
-		ob1.agregarPersona("aasdsad", "a", "aa", "dd", "as");
-		
+		ob1.agregarPersona("pb", "A", "Sofia", "Pagani", "31");
+		ob1.agregarPersona("pb", "A", "Patricio", "Pagani", "31");
 		ob1.agregarPersona("pb", "A", "Mariano", "Pagani", "31");
+		
 		ob1.agregarMueble("pb", "A", "Mesa", "madera", Color.BLANCO);
+		ob1.agregarMueble("pb", "A", "Cama", "madera", Color.BLANCO);
+		ob1.agregarMueble("pb", "A", "Silla", "madera", Color.BLANCO);
 		ob1.mostrarViviendas();
 		
+		System.out.println(ob1.buscarDestino("1asds", "sdsd"));
+		ob1.realizarMudanza("pb", "A", "1", "C");
 		
-		//AGREGAR DEPARTAMENTE SINO EXISTE LO CREA SINO DEVUELVE ERROR
-		//AGREGAR PERSONA BUSCA EL DPTARTAMENTO AL CUAL SE TIENE QUE AGREGAR, SINO EXISTE DEVUELVE ERROR
-		//AGREGAR MUEBLE OK, SI ENCUENTRA EL DPTO LO AGREGA SINO DEVUELVE ERROR
-		
-		//FALTA  MUDANZA
+		//ya esta chequeado que realizarMudanza entre bien si existe ambos departamentos, falta hacer los metodos de mudanza
+		//para mover muebles y personas de un dpto al otro
 		
 		//System.out.println(ob1.getDireccion().toString());
 		//ob1.mostrarViviendas();
