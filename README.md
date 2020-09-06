@@ -1,4 +1,3 @@
-# BE-TP2-12E-GRP01
 <h1>Composición y Agregación </h1>
 
 <h2>Ejercicio 1 </h2>
